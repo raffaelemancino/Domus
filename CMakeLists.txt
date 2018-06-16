@@ -197,3 +197,6 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(domus src/domus_node.cpp)
+target_link_libraries(domus ${catkin_LIBRARIES})
